@@ -46,5 +46,5 @@ function getCard() {
 
 // Event listener to reset the page when the reset button is clicked
 cardReset.addEventListener('click', () => {
-  location.reload();
+  window.location.reload(false);
 });
