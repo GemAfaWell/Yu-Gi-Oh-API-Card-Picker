@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yu-Gi-Oh! Card Picker</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Custom Fonts -->
+  <link href="assets/css/fonts/Yu-Gi-Oh! ITC Stone Serif Small Caps Bold.ttf" rel="stylesheet">
+  <link href="assets/css/fonts/yu-gi-oh_itc_stone_serif_small_caps_bold-webfont.woff" rel="stylesheet">
+  <link href="assets/css/fonts/yu-gi-oh_itc_stone_serif_small_caps_bold-webfont.woff2" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <div id="header">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsmashwordpress.blob.core.windows.net%2Fmain-site-prod%2FYu-Gi-Oh_TCG_new_logo-2.png&f=1&nofb=1&ipt=98296dcb73b59198fc1486a1884124592b2b426caaa707a10a4d8de9c0adb30f&ipo=images" id="yugioh-logo">
+      <h1 id="picker">Card Picker</h1>
+    </div>
+    <div id="description">
+      <p>Click the button below to get a random Yu-Gi-Oh! card.</p>
+      <p>Click the card to get its information below it!</p>
+    </div>
+    <div id="picker">
+      <button id="button" onclick="getCard()">Get Card</button>
+      <div id="cardImage"></div>
+      <div id="cardInfo" class="cardInfo"></div>
+      <button id="reset" onclick="reset()">New Card!</button>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

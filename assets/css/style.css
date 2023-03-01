@@ -1,0 +1,140 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clearfix hack */
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 0.6em auto;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  border-radius: 0.6em;
+}
+#header, #description {
+  text-align: center;
+}
+#header img {
+  height: 10rem;
+  width: auto;
+  max-width: 100%;
+}
+#header h1 {
+  font-size: 2.4em;
+  padding: 0 0 0.5em 0;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0 0.2em #333;
+}
+#cardInfo {
+  margin-bottom: 1.2em;
+  padding: 1.2em;
+}
+
+#cardImage img {
+  display: block;
+  margin: 0.6em auto;
+  height: 20rem;
+  width: auto;
+  max-width: 100%;
+  align-self: center;
+}
+.cardInfo {
+  display: none;
+  overflow: hidden;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* Fonts */
+@font-face {
+  font-family: 'Yu-Gi-Oh!';
+  src: url('fonts/Yu-Gi-Oh! ITC Stone Serif Small Caps Bold.ttf')
+      format('truetype'),
+    url('fonts/yu-gi-oh_itc_stone_serif_small_caps_bold-webfont.woff')
+      format('woff'),
+    url('fonts/yu-gi-oh_itc_stone_serif_small_caps_bold-webfont.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Text Styles */
+#picker h1 {
+  font-family: 'Yu-Gi-Oh', serif;
+  color: #fff;
+  text-shadow: 0 0 0.2em #333;
+}
+
+/* Background Styles */
+body {
+  background-color: #000;
+  background-image: url('images/ygogif.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Yu-Gi-Oh!', serif;
+  font-size: 1.2em;
+  text-shadow: 0 0 0.2em #333;
+}
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Picker Styles */
+#picker {
+  border-radius: 0.6em;
+  padding: 1.2em;
+  margin: 0.6em auto;
+}
+
+/* Button Styles */
+button {
+  background-color: #fff;
+  color: #000;
+  border: 0.2em solid #000;
+  text-shadow: 0 0 0.2em #333;
+}
+
+/* Card Image Styles */
+#cardImage img {
+  border: 0.2em solid #000;
+  border-radius: 0.6em;
+}
+
+/* Show Card Info */
+.showCardInfo {
+  display: block;
+  background-color: #fff;
+  border-radius: 0.6em;
+  color: #000;
+  border: 0.2em solid #000;
+  text-shadow: 0 0 0.2em #333;
+  margin-bottom: 1.2em;
+  padding: 0 1.2em;
+  font-size: 0.9em;
+  text-align: center;
+}
